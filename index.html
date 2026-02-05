@@ -73,6 +73,55 @@
             border: 1px solid #ddd;
         }
 
+        /* Responsive adjustments for mobile viewing */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px 0;
+                gap: 20px;
+                background: #111;
+                /* Dark background for mobile focus */
+            }
+
+            .page {
+                width: 100% !important;
+                height: auto !important;
+                min-height: auto !important;
+                border: none;
+                border-radius: 0;
+            }
+
+            .fleet-grid {
+                grid-template-columns: 1fr !important;
+                /* Stack cars on mobile */
+            }
+
+            .why-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .why-right {
+                width: 100% !important;
+            }
+
+            .services-title-row {
+                flex-direction: column;
+                align-items: flex-start !important;
+                gap: 10px;
+            }
+
+            .services-title-row p {
+                text-align: left !important;
+            }
+
+            .footer-strip {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                padding: 20px !important;
+            }
+        }
+
         .cover {
             background: var(--black);
             height: 100%;
